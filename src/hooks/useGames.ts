@@ -4,17 +4,18 @@ import { CanceledError } from 'axios';
 import useData from './useData';
 import { Genre } from './useGenres';
 
-export interface Platform{
+export interface platform{
     id:number;
     name:string;
     slug:string;
+
 }
 
 export interface Game {
     id: number;
     name: string;
     background_image:string;
-    parent_platforms: {platform:Platform}[];
+    parent_platforms: {platform:platform}[];
     metacritic:number;
   }
   

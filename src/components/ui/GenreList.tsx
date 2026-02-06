@@ -10,7 +10,7 @@ import {
   Spinner,
   Text,
 } from "@chakra-ui/react";
-import getCroppedImageUrl from "../../hooks/image-url";
+import getCroppedImageUrl from "../../services/image-url";
 interface Props {
   onSelectGenre: (genre: Genre) => void;
   selectedGenre: Genre | null;
